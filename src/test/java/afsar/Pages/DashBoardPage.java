@@ -1,12 +1,12 @@
-package afsar.Pages;
+package afsar.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
-import afsar.Drivers.PageDriver;
-import afsar.Utility.CommonMethods;
+import afsar.drivers.PageDriver;
+import afsar.utilities.CommonMethods;
 
 public class DashBoardPage extends CommonMethods{
 	

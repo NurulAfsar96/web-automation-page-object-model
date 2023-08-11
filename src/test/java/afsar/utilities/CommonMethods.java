@@ -1,6 +1,6 @@
-package afsar.Utility;
+package afsar.utilities;
 
-import afsar.Drivers.BaseDriver;
+import afsar.drivers.BaseDriver;
 
 public class CommonMethods extends BaseDriver {
 

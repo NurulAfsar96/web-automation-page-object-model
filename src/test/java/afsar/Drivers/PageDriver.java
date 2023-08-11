@@ -1,4 +1,4 @@
-package afsar.Drivers;
+package afsar.drivers;
 
 import org.openqa.selenium.WebDriver;
 

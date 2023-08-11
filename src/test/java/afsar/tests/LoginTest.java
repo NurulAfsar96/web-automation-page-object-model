@@ -1,11 +1,11 @@
-package afsar.TestCases;
+package afsar.tests;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import afsar.Drivers.BaseDriver;
-import afsar.Drivers.PageDriver;
-import afsar.Pages.LoginPage;
+import afsar.drivers.BaseDriver;
+import afsar.drivers.PageDriver;
+import afsar.pages.LoginPage;
 
 public class LoginTest extends BaseDriver {
 	

@@ -3,8 +3,8 @@
 <suite name="Automaiton">
 	<test name="LoginTest">
 		<classes>
-			<class name="afsar.TestCases.LoginTest" />
-			<class name="afsar.TestCases.DashBoardTest" />  
+			<class name="afsar.tests.LoginTest" />
+			<class name="afsar.tests.DashBoardTest" />  
 		</classes>
 	</test>
 </suite>
