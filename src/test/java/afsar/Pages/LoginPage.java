@@ -10,24 +10,25 @@ import afsar.Utility.CommonMethods;
 
 public class LoginPage extends CommonMethods {
 
-	public void loginPage()
+	public LoginPage()
 	{
 		PageFactory.initElements(PageDriver.getCurrentDriver(), this);
 	}
 	@FindBys({
-		
-		@FindBy(xpath ="//body/div[@id='app']/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[1]/div[1]/div[2]/input[1]")
+		@FindBy(name="username"),
+		@FindBy(xpath = "//body/div[@id='app']/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[1]/div[1]/div[2]/input[1]")
 	})
-	WebElement username;
+	WebElement uname;
 	
 	@FindBys({
-		
+		@FindBy(name="password"),
 		@FindBy(xpath ="//body/div[@id='app']/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[2]/div[1]/div[2]/input[1]")
 	})
-	WebElement password;
+	WebElement passwd;
 	
 	@FindBys({
-		
+		@FindBy(tagName="button"),
+		@FindBy(xpath="/html[1]/body[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[3]/button[1]"),
 		@FindBy(xpath ="//body/div[@id='app']/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/form[1]/div[3]/button[1]")
 	})
 	WebElement loginBtn;
@@ -35,34 +36,34 @@ public class LoginPage extends CommonMethods {
 	public void login() throws InterruptedException {
 		timeout();
 		try {
-			if(username.isDisplayed()) { 
-				username.sendKeys("Admin");
+			if(uname.isDisplayed()) { 
+				uname.sendKeys("Admin");
 				timeout();
 			}
-		}
-		catch (Exception e)
+			
+		} catch (Exception e)
 		{
 			System.out.println(e);
 		}
-		
 	
 		try {
-			if(password.isDisplayed()) { 
-				password.sendKeys("admin123");
+			if(passwd.isDisplayed()) { 
+				passwd.sendKeys("admin123");
 				timeout();
 				}
+			
 		}
 		catch (Exception e)
 		{
 			System.out.println(e);
 		}
-		
-		
+			
 		try {
 			if(loginBtn.isDisplayed()) { 
 				loginBtn.click();
 				timeout();
 				}
+			
 		}
 		catch (Exception e)
 		{

@@ -4,10 +4,10 @@ import org.openqa.selenium.WebDriver;
 
 public class PageDriver {
 	
-	public static final ThreadLocal<WebDriver> webdriver = new ThreadLocal<WebDriver>();
+	public static final ThreadLocal<WebDriver> webDriver = new ThreadLocal<WebDriver>();
 	public static PageDriver instance = null;
 	
-	private PageDriver() {}     //constructor
+	private PageDriver() {	}     //constructor
 	
 	public static PageDriver getInstance()
 	{
@@ -18,12 +18,12 @@ public class PageDriver {
 	
 	public WebDriver getDriver()
 	{
-		return webdriver.get();
+		return webDriver.get();
 	}
 	
 	public void setDriver(WebDriver driver)
 	{
-		webdriver.set(driver);
+		webDriver.set(driver);
 	}
 	
 	public static WebDriver getCurrentDriver() 

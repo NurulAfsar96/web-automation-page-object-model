@@ -10,8 +10,8 @@ import org.testng.annotations.BeforeSuite;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseDriver {
-	WebDriver driver = null;
 	public static String url = "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login";
+	WebDriver driver = null;
 	
 	@BeforeSuite
 	public void start()

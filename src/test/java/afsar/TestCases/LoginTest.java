@@ -7,7 +7,7 @@ import afsar.Drivers.BaseDriver;
 import afsar.Drivers.PageDriver;
 import afsar.Pages.LoginPage;
 
-public class LoginTest extends BaseDriver{
+public class LoginTest extends BaseDriver {
 	
 	// "URL" always keep in base driver as static variable;
 	
