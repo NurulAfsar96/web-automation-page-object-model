@@ -10,7 +10,6 @@ import afsar.pages.LoginPage;
 public class LoginTest extends BaseDriver {
 	
 	// "URL" always keep in base driver as static variable;
-	
 	//Open URL and maximize window----
 	@BeforeClass
 	public void openUrl() {

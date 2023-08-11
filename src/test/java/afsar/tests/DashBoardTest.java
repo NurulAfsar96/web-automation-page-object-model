@@ -10,8 +10,9 @@ public class DashBoardTest extends BaseDriver{
 	@Test(priority = 0)
 	public void DashboardTest() throws InterruptedException {
 		DashBoardPage dashpage = new DashBoardPage();
-		dashpage.clickAdmin();
-		//dashpage.clickPIM();
+		dashpage.checkDash();
+		//dashpage.clickAdmin();
+		dashpage.clickPIM();
 	}
 	
 
