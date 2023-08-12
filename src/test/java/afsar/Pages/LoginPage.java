@@ -87,6 +87,7 @@ public class LoginPage extends CommonMethods {
 				loginBtn.click();
 				timeout();
 				test.pass("<p style=\"color:#1ccc0c; font-size:13px\"><b>Successfully Login.</b></p>");
+				@SuppressWarnings("unused")
 				String screenShotPath = GetScreenshot.capture(PageDriver.getCurrentDriver(), "LoginPass");
 				String dest = System.getProperty("user.dir") + "\\screenshots\\" + "LoginPass.png";
 				test.pass(MediaEntityBuilder.createScreenCaptureFromPath(dest).build());

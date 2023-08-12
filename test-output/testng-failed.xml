@@ -8,6 +8,7 @@
           <include name="start"/>
           <include name="DashboardTest"/>
           <include name="close"/>
+          <include name="afterClass"/>
         </methods>
       </class> <!-- afsar.tests.DashBoardTest -->
     </classes>
