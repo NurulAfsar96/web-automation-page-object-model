@@ -12,6 +12,7 @@ import com.aventstack.extentreports.ExtentTest;
 import afsar.drivers.BaseDriver;
 import afsar.drivers.PageDriver;
 import afsar.pages.LoginPage;
+import afsar.utilities.Dataset;
 import afsar.utilities.ExtentFactory;
 
 public class LoginTest extends BaseDriver {
@@ -28,14 +29,22 @@ public class LoginTest extends BaseDriver {
 		PageDriver.getCurrentDriver().manage().window().maximize();
 		PageDriver.getCurrentDriver().get(url);
 		report = ExtentFactory.getInstance();
-		parentTest = report.createTest("<p style=\"color:#FF6000; font-size:20px\"><b>ORANGE HRM</b></p>").assignAuthor("Nurul Afsar").assignDevice("Windows");
+		parentTest = report.createTest("<p style=\"color:#FF6000; font-size:20px\"><b>ORANGE HRM-LOGIN</b></p>").assignAuthor("Nurul Afsar").assignDevice("Windows");
 	}
-	@Test(priority = 0)
+	
+	@Test(priority = 0, dataProvider ="loginInValidDataExcel", dataProviderClass =Dataset.class)
+	public void loginTest1(String username, String password) throws InterruptedException, IOException {
+		childTest = parentTest.createNode("<p style=\"color:#05a16a; font-size:20px\"><b>LOGIN TEST</b></p>");
+		LoginPage loginpage = new LoginPage(childTest);
+		loginpage.login(username,password);
+	}
+	
+	/*@Test(priority = 0)
 	public void loginTest() throws InterruptedException, IOException {
 		childTest = parentTest.createNode("<p style=\"color:#05a16a; font-size:20px\"><b>LOGIN TEST</b></p>");
 		LoginPage loginpage = new LoginPage(childTest);
-		loginpage.login();
-	}
+		loginpage.login("Admin","admin123");}*/
+	
 	//------ For pushing report to the folder.
 	@AfterClass
 	public void afterClass() {

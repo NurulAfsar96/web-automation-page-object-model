@@ -21,7 +21,7 @@ public class DashBoardTest extends BaseDriver{
 	@Test(priority = 0)
 	public void DashboardTest() throws InterruptedException, IOException {
 		report = ExtentFactory.getInstance();
-		parentTest = report.createTest("<p style=\"color:#FF6000; font-size:20px\"><b>ORANGE HRM</b></p>").assignAuthor("Nurul Afsar").assignDevice("Windows");
+		parentTest = report.createTest("<p style=\"color:#FF6000; font-size:20px\"><b>ORANGE HRM-Dashboard</b></p>").assignAuthor("Nurul Afsar").assignDevice("Windows");
 		childTest = parentTest.createNode("<p style=\"color:#05a16a; font-size:20px\"><b>DASHBOARD TEST</b></p>");
 		DashBoardPage dashpage = new DashBoardPage(childTest);
 		dashpage.checkDash();

@@ -1,43 +1,109 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-12T21:23:47 BDT" name="Automaiton" finished-at="2023-08-12T21:24:23 BDT" duration-ms="35852">
+  <suite started-at="2023-08-15T11:57:29 BDT" name="Automaiton" finished-at="2023-08-15T11:59:14 BDT" duration-ms="105140">
     <groups>
     </groups>
-    <test started-at="2023-08-12T21:23:47 BDT" name="LoginTest" finished-at="2023-08-12T21:24:23 BDT" duration-ms="35852">
-      <class name="afsar.tests.DashBoardTest">
-        <test-method signature="DashboardTest()[pri:0, instance:afsar.tests.DashBoardTest@4a8355dd]" started-at="2023-08-12T21:24:04 BDT" name="DashboardTest" finished-at="2023-08-12T21:24:23 BDT" duration-ms="18260" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DashboardTest -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:afsar.tests.DashBoardTest@4a8355dd]" started-at="2023-08-12T21:24:23 BDT" name="afterClass" finished-at="2023-08-12T21:24:23 BDT" duration-ms="90" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- afsar.tests.DashBoardTest -->
+    <test started-at="2023-08-15T11:57:29 BDT" name="LoginTest2" finished-at="2023-08-15T11:59:14 BDT" duration-ms="105140">
       <class name="afsar.tests.LoginTest">
-        <test-method is-config="true" signature="start()[pri:0, instance:afsar.tests.LoginTest@7fd50002]" started-at="2023-08-12T21:23:43 BDT" name="start" finished-at="2023-08-12T21:23:47 BDT" duration-ms="4120" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:afsar.tests.LoginTest@4f32a3ad]" started-at="2023-08-15T11:57:26 BDT" name="start" finished-at="2023-08-15T11:57:29 BDT" duration-ms="2778" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method is-config="true" signature="openUrl()[pri:0, instance:afsar.tests.LoginTest@7fd50002]" started-at="2023-08-12T21:23:47 BDT" name="openUrl" finished-at="2023-08-12T21:23:51 BDT" duration-ms="4583" status="PASS">
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:afsar.tests.LoginTest@4f32a3ad]" started-at="2023-08-15T11:57:29 BDT" name="openUrl" finished-at="2023-08-15T11:58:11 BDT" duration-ms="42323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUrl -->
-        <test-method signature="loginTest()[pri:0, instance:afsar.tests.LoginTest@7fd50002]" started-at="2023-08-12T21:23:51 BDT" name="loginTest" finished-at="2023-08-12T21:24:04 BDT" duration-ms="12538" status="PASS">
+        <test-method signature="loginTest1(java.lang.String,java.lang.String)[pri:0, instance:afsar.tests.LoginTest@4f32a3ad]" started-at="2023-08-15T11:58:12 BDT" name="loginTest1" data-provider="loginInValidDataExcel" finished-at="2023-08-15T11:58:24 BDT" duration-ms="12481" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin12]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:afsar.tests.LoginTest@7fd50002]" started-at="2023-08-12T21:24:04 BDT" name="afterClass" finished-at="2023-08-12T21:24:04 BDT" duration-ms="340" status="PASS">
+        </test-method> <!-- loginTest1 -->
+        <test-method signature="loginTest1(java.lang.String,java.lang.String)[pri:0, instance:afsar.tests.LoginTest@4f32a3ad]" started-at="2023-08-15T11:58:24 BDT" name="loginTest1" data-provider="loginInValidDataExcel" finished-at="2023-08-15T11:58:37 BDT" duration-ms="12376" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest1 -->
+        <test-method signature="loginTest1(java.lang.String,java.lang.String)[pri:0, instance:afsar.tests.LoginTest@4f32a3ad]" started-at="2023-08-15T11:58:37 BDT" name="loginTest1" data-provider="loginInValidDataExcel" finished-at="2023-08-15T11:58:49 BDT" duration-ms="12364" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin235]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest1 -->
+        <test-method signature="loginTest1(java.lang.String,java.lang.String)[pri:0, instance:afsar.tests.LoginTest@4f32a3ad]" started-at="2023-08-15T11:58:49 BDT" name="loginTest1" data-provider="loginInValidDataExcel" finished-at="2023-08-15T11:59:01 BDT" duration-ms="12320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest1 -->
+        <test-method signature="loginTest1(java.lang.String,java.lang.String)[pri:0, instance:afsar.tests.LoginTest@4f32a3ad]" started-at="2023-08-15T11:59:01 BDT" name="loginTest1" data-provider="loginInValidDataExcel" finished-at="2023-08-15T11:59:14 BDT" duration-ms="12319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest1 -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:afsar.tests.LoginTest@4f32a3ad]" started-at="2023-08-15T11:59:14 BDT" name="afterClass" finished-at="2023-08-15T11:59:14 BDT" duration-ms="349" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="close()[pri:0, instance:afsar.tests.LoginTest@7fd50002]" started-at="2023-08-12T21:24:23 BDT" name="close" finished-at="2023-08-12T21:24:23 BDT" duration-ms="262" status="PASS">
+        <test-method is-config="true" signature="close()[pri:0, instance:afsar.tests.LoginTest@4f32a3ad]" started-at="2023-08-15T11:59:14 BDT" name="close" finished-at="2023-08-15T11:59:14 BDT" duration-ms="245" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
       </class> <!-- afsar.tests.LoginTest -->
-    </test> <!-- LoginTest -->
+    </test> <!-- LoginTest2 -->
   </suite> <!-- Automaiton -->
 </testng-results>

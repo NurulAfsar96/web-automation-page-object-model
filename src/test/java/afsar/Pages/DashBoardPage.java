@@ -23,7 +23,7 @@ public class DashBoardPage extends CommonMethods{
 		this.test = test;
 	}
 	
-	//----------------------- Loators ----------------------------------------
+	//----------------------- Locators ----------------------------------------
 	@FindBys({
 		
 	

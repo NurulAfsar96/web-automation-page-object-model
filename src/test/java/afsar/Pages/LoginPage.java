@@ -41,11 +41,12 @@ public class LoginPage extends CommonMethods {
 	})
 	WebElement loginBtn;
 	
-	public void login() throws InterruptedException, IOException {
+	
+	public void login(String username, String password) throws InterruptedException, IOException {
 		timeout();
 		try {
 			if(uname.isDisplayed()) { 
-				uname.sendKeys("Admin");
+				uname.sendKeys(username);
 				timeout();
 			}
 			
@@ -64,7 +65,7 @@ public class LoginPage extends CommonMethods {
 	
 		try {
 			if(passwd.isDisplayed()) { 
-				passwd.sendKeys("admin123");
+				passwd.sendKeys(password);
 				timeout();
 				}
 			
